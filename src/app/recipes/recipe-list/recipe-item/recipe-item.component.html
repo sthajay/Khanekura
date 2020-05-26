@@ -1,0 +1,14 @@
+
+<!-- current path bata Relative path deko ho routerlink ma -->
+
+<a class="list-group-item clearfix" style="cursor: pointer;" [routerLink]="[index]"
+routerLinkActive="active">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+        <p class="list-group-item-text">{{recipe.description}}</p>
+    </div>
+    <span class="pull-right">
+        <img [src]="recipe.imagePath" alt="{{recipe.name}}" style="max-height: 50px;" class="img-responsive">
+        <!-- <img src="{{item.imagePath}}" alt="{{item.name}}" style="max-height: 50px;" class="img-responsive"> -->
+    </span>
+</a>
